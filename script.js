@@ -5,19 +5,19 @@ let jsonDatabase = [
     "title" : "Gecko",
     "picURL" : "url('image1.jpg')",
     "color" : "#39403D",
-    "spoons" : ["Usually small", "Short stout body", "Large head", "Usually nocturnal", "Cuts off tail when stressed"]
+    "lizards" : ["Usually small", "Short stout body", "Large head", "Usually nocturnal", "Cuts off tail when stressed"]
   },
   {
     "title" : "Red-eyed Crocodile Skink",
     "picURL" : "url('image2.jpg')",
     "color" : "#D97218",
-    "spoons" : ["Looks like dragons", "Cream-colored belly", "Lives up to 6 years", "Plays dead when stressed"]
+    "lizards" : ["Looks like dragons", "Cream-colored belly", "Lives up to 6 years", "Plays dead when stressed"]
   },
   {
     "title" : "Blue-tongued Skink",
     "picURL" : "url('image3.jpg')",
     "color" : "#D9A79C",
-    "spoons" : ["Not aggressive to humans", "Has a big appetite for meat", "Tongue is blue"]
+    "lizards" : ["Not aggressive to humans", "Has a big appetite for meat", "Tongue is blue"]
   }
 ]
 
@@ -46,8 +46,8 @@ function createElement(jsonDatabase) {
   let newList = document.createElement('ul');
   newElement.appendChild(newList);
 
-  for (var i = 0; i < jsonDatabase['spoons'].length; i++) {
-    var currentString = jsonDatabase['spoons'][i];
+  for (var i = 0; i < jsonDatabase['lizards'].length; i++) {
+    var currentString = jsonDatabase['lizards'][i];
     var newItem = document.createElement('li');
     newItem.innerHTML = currentString;
     newList.appendChild(newItem);
