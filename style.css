@@ -18,7 +18,6 @@ h1 {
 #mainGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: 650px; */
   grid-column-gap: 1vmin;
   grid-row-gap: 1vmin;
 }
@@ -27,6 +26,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 600px; */
+}
+
+.newImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 34vmin;
+  width: 100%;
 }
 
 .contentItem {
